@@ -1,0 +1,24 @@
+{
+  "name": "esunforex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "currency.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimi0230/esunForex.git"
+  },
+  "author": "Kimi Tsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimi0230/esunForex/issues"
+  },
+  "homepage": "https://github.com/kimi0230/esunForex#readme",
+  "dependencies": {
+    "cheerio": "~0.19.0",
+    "crawler": "~0.4.3",
+    "moment": "^2.18.1"
+  }
+}
