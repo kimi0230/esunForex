@@ -12,7 +12,7 @@ var c = new Crawler({
 var USNOTIFY = 30;
 var JPNOTIFY = 0.2650;
 var MAX_USJP = 0;
-var MIN_USJP = 0;
+var MIN_USJP = 65535;
 
 function print_col(obj) {
 	let col = "";
