@@ -70,7 +70,7 @@ function esunbank() {
 
 			let us_vs_jp = get_proportion(usDollar.SpotSelling, jpDollar.SpotSelling);
 			MAX_USJP = Math.round((Math.max(MAX_USJP, us_vs_jp) * 1000)) / 1000;
-			MIN_USJP = Math.round((Math.min(MAX_USJP, us_vs_jp) * 1000)) / 1000;
+			MIN_USJP = Math.round((Math.min(MIN_USJP, us_vs_jp) * 1000)) / 1000;
 			console.log("US/JP = %d \t MAX_USJP = %d \t MIN_USJP = %d \t", us_vs_jp, MAX_USJP, MIN_USJP);
 
 			console.log("----------------------------------------------------------------------------------------------------");
