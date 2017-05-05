@@ -1,14 +1,3 @@
-var Crawler = require("crawler");
-var url = require('url');
-var moment = require('moment');
-var c = new Crawler({
-	maxConnections: 10,
-	// This will be called for each crawled page
-	callback: function(error, result, $) {
-		console.log("Crawler default callback");
-	}
-});
-
 var USNOTIFY = 30;
 var JPNOTIFY = 0.2650;
 var MAX_USJP = 0;
@@ -86,6 +75,17 @@ function esunbank() {
 		}
 	}]);
 }
+
+var Crawler = require("crawler");
+var url = require('url');
+var moment = require('moment');
+var c = new Crawler({
+	maxConnections: 10,
+	// This will be called for each crawled page
+	callback: function(error, result, $) {
+		console.log("Crawler default callback");
+	}
+});
 
 esunbank();
 setInterval(esunbank, 600000);
